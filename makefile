@@ -3,13 +3,7 @@ OBJ = g++ $(CFAGS) -c $< -o $@
 
 .PHONY: clean
 
-all: folder1 folder2 bin/geometry.exe
-
-folder1:
-	mkdir -p build
-
-folder2:
-	mkdir -p bin
+comp: geometry.o main.o insercts.o
 
 clean:
 	rm build/*.o
