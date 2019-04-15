@@ -2,8 +2,11 @@ CFLAGS = -Wall -Werror
 OBJ = g++ $(CFAGS) -c $< -o $@
 
 .PHONY: clean
+folder1:
+	mkdir -p build
 
-comp: geometry.o main.o insercts.o
+folder2:
+	mkdir -p bin
 
 clean:
 	rm build/*.o
