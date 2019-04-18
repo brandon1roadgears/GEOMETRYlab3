@@ -1,6 +1,7 @@
 #include "geometry.h"
 int main()
 {
+        const float p = 3.141592653589;
 	int x1, y1, x2, y2;
 	float r1, r2, d, flag = 0, S1, S2, perim1, perim2;
 	cout << "Input x1, y1, r1:" << endl;
