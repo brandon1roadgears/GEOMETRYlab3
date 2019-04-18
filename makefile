@@ -14,9 +14,9 @@ tracktwo:
 bin/geometry.exe: build/main.o build/insercts.o	
 	g++ $(CFLAGS) $^ -o $@
 
-build/main.o: src/main.cpp src/geometry.h 
+build/main.o: src/main.c src/geometry.h 
 	$(OBJ)
-build/insercts.o: src/insercts.cpp src/geometry.h
+build/insercts.o: src/insercts.c src/geometry.h
 	$(OBJ)
 
 
