@@ -27,6 +27,5 @@ void printfunction(
         printf("intersects: \n circle \n ");
     }
     system("PAUSE");
-    return;
 }
 
