@@ -1,5 +1,5 @@
 CFLAGS = -Wall -Werror
-OBJ = g++ $(CFAGS) -c $< -o $@
+OBJ = gcc $(CFAGS) -c $< -o $@
 
 .PHONY: clean
 
@@ -12,7 +12,7 @@ tracktwo:
 	mkdir -p bin
 
 bin/geometry.exe: build/main.o build/insercts.o	
-	g++ $(CFLAGS) $^ -o $@
+	gcc $(CFLAGS) $^ -o $@
 
 build/main.o: src/main.c src/geometry.h 
 	$(OBJ)
