@@ -8,6 +8,7 @@ folder1:
 
 folder2:
 	mkdir -p bin
+
 bin/geometry/exe: build/main.o build/insercts.o
 	g++ $(CFLAGS) $^ -o $@
 
