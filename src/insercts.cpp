@@ -1,5 +1,5 @@
 #include "geometry.h"
-void print(int x1, int y1, int x2, int y2, float r1, float r2, float perim1, float perim2, float S1, float S2, int flag) {
+void printfunction(int x1, int y1, int x2, int y2, float r1, float r2, float perim1, float perim2, float S1, float S2, int flag) {
 	cout << "1" << endl;
 	printf("circle(%d %d , %.1f)\n", x1, y1, r1);
 	printf("perimetr = %.3f\n", perim1);
